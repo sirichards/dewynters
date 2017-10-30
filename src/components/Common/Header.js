@@ -13,10 +13,10 @@ class Header extends Component {
         return (
             <header className="header">
 
-                <Link to="/contact">Contact Us</Link>
-
+                <button onClick={this.toggleNav.bind(this) } className="header__nav-toggle">Nav</button>
+                
                 <div className="header__right">
-                    <button onClick={this.toggleNav.bind(this) } className="header__nav-toggle">Nav</button>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
 
                 <nav className={`header__nav ${this.state.active ? 'active' : ''}`}>

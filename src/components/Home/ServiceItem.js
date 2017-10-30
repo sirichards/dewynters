@@ -17,9 +17,9 @@ class ServiceItem extends Component {
     render() {
         return (
             <VisibilitySensor onChange={ this.onChange.bind(this) } >
-                <div className={`service ${this.state.active ? 'active' : ''}`}>
+                <div className={`home-service ${this.state.active ? 'active' : ''}`}>
                     <img src={this.props.service.fields.image.fields.file.url} alt="" />
-                    <div className="service__content">
+                    <div className="home-service__content">
                         <h2>{this.props.service.fields.title}</h2>
                         <p>{this.props.service.fields.body}</p>
                     </div>

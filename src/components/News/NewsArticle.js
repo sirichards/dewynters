@@ -7,7 +7,7 @@ class NewsArticle extends Component {
         this.state = {article: null};
     }
     componentDidMount() {
-        const {match} = this.props
+        const { match } = this.props
         if (match && match.params.slug) {
             client.getEntries({content_type: 'news', 'fields.slug': match.params.slug}).then((response) => {
                 this.setState({article: response.items[0]})
