@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom'
 import client from '../../services/Client';
 import NewsArticleItem from './NewsArticleItem';
+import NewsArticle from './NewsArticle';
 
 class News extends Component {
     constructor() {
@@ -13,11 +15,10 @@ class News extends Component {
         })
     }
     render() {
-
+        const { match } = this.props
         const newsArticles = this.state.articles.map( (article, i) => {
-            return <NewsArticleItem article={article} key={i} />
+            return <NewsArticleItem article={article} match={match} key={i} />
         })
-
         return (
             <div className="container">
                 <div className="row">

@@ -1,14 +1,18 @@
 .home-wrapper {
     height: 100vh;
     width: 100vw;
-    overflow: hidden; 
     background-color: $black;
-    // display: flex;
+    overflow-x: hidden; 
+    @include media-breakpoint-up(md) {
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: auto; 
+    }
 }
 
-.home-wrapper__scroll {
-    display: flex;
-    position: relative;
-    right: 0;
-    transition: all .5s;
-}
+// .home-wrapper__scroll {
+//     display: flex;
+//     position: relative;
+//     right: 0;
+//     transition: all .5s;
+// }

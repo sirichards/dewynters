@@ -1,5 +1,39 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=2301e7d3-62ff-47f4-a79e-bd20a2427d3f");
 img {
   max-width: 100%; }
+
+@font-face {
+  font-family: "Texta W00_n3";
+  src: url("../assets/fonts/cf6bce5f-347e-4a5f-ba15-9ed849772d1c.eot?#iefix") format("eot"); }
+
+@font-face {
+  font-family: "Texta W00";
+  src: url("../assets/fonts/cf6bce5f-347e-4a5f-ba15-9ed849772d1c.eot?#iefix");
+  src: url("../assets/fonts/cf6bce5f-347e-4a5f-ba15-9ed849772d1c.eot?#iefix") format("eot"), url("../assets/fonts/0de9231f-cf94-484f-912c-5d5caea770d9.woff2") format("woff2"), url("../assets/fonts/1678bbe0-d427-470a-8ae0-8b8f395cd972.woff") format("woff"), url("../assets/fonts/12e3764f-b873-482d-8dd4-79ffd59df145.ttf") format("truetype"), url("../assets/fonts/54ecda59-0b4c-4028-8777-a443534c40db.svg#54ecda59-0b4c-4028-8777-a443534c40db") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Texta W00_n7";
+  src: url("../assets/fonts/fa5fdeab-9aca-4fbb-8f26-9058ac4be215.eot?#iefix") format("eot"); }
+
+@font-face {
+  font-family: "Texta W00";
+  src: url("../assets/fonts/fa5fdeab-9aca-4fbb-8f26-9058ac4be215.eot?#iefix");
+  src: url("../assets/fonts/fa5fdeab-9aca-4fbb-8f26-9058ac4be215.eot?#iefix") format("eot"), url("../assets/fonts/34a6bc31-ca3a-4845-9a7a-7b5172c34f24.woff2") format("woff2"), url("../assets/fonts/7e0d9a45-6e94-4741-8d3f-a15b3392bdae.woff") format("woff"), url("../assets/fonts/8d74e4fa-ccd3-4b9a-981a-3e0987043270.ttf") format("truetype"), url("../assets/fonts/816f6c84-d86b-4457-8a38-5569aab18569.svg#816f6c84-d86b-4457-8a38-5569aab18569") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Texta W00_n8";
+  src: url("../assets/fonts/54492705-cb6e-4a67-86fc-83680f4e5270.eot?#iefix") format("eot"); }
+
+@font-face {
+  font-family: "Texta W00";
+  src: url("../assets/fonts/54492705-cb6e-4a67-86fc-83680f4e5270.eot?#iefix");
+  src: url("../assets/fonts/54492705-cb6e-4a67-86fc-83680f4e5270.eot?#iefix") format("eot"), url("../assets/fonts/7f181530-6e16-4134-859d-1764c04d35c9.woff2") format("woff2"), url("../assets/fonts/a2387200-b32f-46af-8049-1527274118bd.woff") format("woff"), url("../assets/fonts/c019c753-e75b-4266-a9ac-8263ec17566f.ttf") format("truetype"), url("../assets/fonts/e043fe27-15df-4442-8d2b-9a1a9b36a628.svg#e043fe27-15df-4442-8d2b-9a1a9b36a628") format("svg");
+  font-weight: 800;
+  font-style: normal; }
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
@@ -71,7 +105,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Texta W00", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -3336,7 +3370,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Texta W00", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -3418,7 +3452,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Texta W00", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -5571,10 +5605,64 @@ a.text-dark:focus, a.text-dark:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 4rem 0; }
+  .header__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .header__nav ul li {
+      position: relative;
+      float: left;
+      clear: both;
+      opacity: 0; }
+      .header__nav ul li:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        background-color: #000;
+        transition: all .5s;
+        z-index: 0; }
+      .header__nav ul li a {
+        color: #000;
+        font-size: 7vh;
+        position: relative;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        font-family: "Texta W00", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        padding: 0 2rem; }
+      .header__nav ul li:hover a {
+        color: #fff;
+        text-decoration: none; }
+      .header__nav ul li:hover:after {
+        width: 100%; }
   .header__nav.active {
     visibility: visible;
     opacity: 1; }
+    .header__nav.active ul li {
+      animation: fadeIn 0.8s;
+      animation-fill-mode: forwards; }
+      .header__nav.active ul li:nth-child(2) {
+        animation-delay: .1s; }
+      .header__nav.active ul li:nth-child(3) {
+        animation-delay: .2s; }
+      .header__nav.active ul li:nth-child(4) {
+        animation-delay: .3s; }
+      .header__nav.active ul li:nth-child(5) {
+        animation-delay: .4s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0); }
+  100% {
+    opacity: 1;
+    transform: translateX(4rem); } }
 
 .header__right {
   float: right; }
@@ -5586,28 +5674,30 @@ a.text-dark:focus, a.text-dark:hover {
 .home-wrapper {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
-  background-color: #000; }
-
-.home-wrapper__scroll {
-  display: flex;
-  position: relative;
-  right: 0;
-  transition: all .5s; }
+  background-color: #000;
+  overflow-x: hidden; }
+  @media (min-width: 768px) {
+    .home-wrapper {
+      display: flex;
+      overflow-y: hidden;
+      overflow-x: auto; } }
 
 .landing {
   width: 100vw;
   height: 100vh;
   flex: 0 0 auto; }
 
-.service {
-  height: 100vh;
-  width: 25vw;
-  min-width: 350px;
+.home-service {
+  width: 100%;
   position: relative;
-  flex: 0 0 auto;
   overflow: hidden; }
-  .service:after {
+  @media (min-width: 768px) {
+    .home-service {
+      flex: 0 0 auto;
+      width: 25vw;
+      height: 100vh;
+      min-width: 350px; } }
+  .home-service:after {
     content: '';
     position: absolute;
     top: 0;
@@ -5616,28 +5706,35 @@ a.text-dark:focus, a.text-dark:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     transition: all .4s; }
-  .service img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    transform: scale(0);
-    transition: all .4s; }
-  .service.active img {
+  .home-service img {
+    display: none; }
+    @media (min-width: 768px) {
+      .home-service img {
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        transition: all .4s;
+        transform: scale(0); } }
+  .home-service.active img {
     transform: scale(1); }
-  .service:hover:after {
+  .home-service:hover:after {
     background-color: transparent; }
-  .service:hover img {
-    transform: scale(1.1); }
+  @media (min-width: 768px) {
+    .home-service:hover img {
+      transform: scale(1.1); } }
 
-.service__content {
+.home-service__content {
   position: relative;
   z-index: 1;
   color: white;
-  padding: 15px;
-  opacity: 0;
-  transition: all .3s;
-  transition-delay: .4s; }
-  .active .service__content {
+  padding: 15px; }
+  @media (min-width: 768px) {
+    .home-service__content {
+      opacity: 0;
+      transition: all .3s;
+      transition-delay: .4s; } }
+  .active .home-service__content {
     opacity: 1; }
