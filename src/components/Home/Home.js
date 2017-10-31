@@ -31,6 +31,8 @@ class Home extends Component {
         // const scrollPx = 50;
         // e.deltaY < 0 ? scrollEl.style.left -= 50+'px' : scrollEl.style.left += 50+'px';
 
+        //https://github.com/BosNaufal/react-scrollbar
+
         return false;
     }
     render() {
