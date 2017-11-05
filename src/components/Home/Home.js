@@ -4,6 +4,7 @@ import Landing from './Landing';
 import ServiceItem from './ServiceItem';
 import Contact from './Contact';
 
+//https://github.com/florinn/react-owl-carousel2/blob/master/example/index.jsx
 import OwlCarousel from 'react-owl-carousel';
 
 class Home extends Component {
@@ -25,24 +26,16 @@ class Home extends Component {
         const scrollEl = document.querySelector('.home-scroll');
 
         var direction = e.deltaY > 0 ? 'up' : 'down';
-        // var scroll = parseInt(scrollEl.style.right);
 
         if (direction == 'up') {
-            // scroll < 0 ? scroll -= 3: scroll = 0;
-            // scrollEl.style.right = scroll+'%';
-           
             this.refs.slide.next()
         } else {
             this.refs.slide.prev()
-            // scroll < 100 ? scroll += 3: scroll = 100;
-            // scrollEl.style.right = scroll+'%';
         }
-
-        // const scrollPx = 50;
-        // e.deltaY < 0 ? scrollEl.style.left -= 50+'px' : scrollEl.style.left += 50+'px';
 
         return false;
     }
+
     render() {
 
         const services = this.state.services.map( (service, i) => {
