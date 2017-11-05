@@ -5685,7 +5685,7 @@ a.text-dark:focus, a.text-dark:hover {
 .landing {
   width: 100vw;
   height: 100vh;
-  flex: 0 0 auto; }
+  overflow: hidden; }
 
 #landing .landing__item {
   width: 100%;
@@ -5704,7 +5704,10 @@ a.text-dark:focus, a.text-dark:hover {
     display: inline-block; }
   #landing .landing__item--active, #landing .landing__item--activeLast {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    z-index: 0; }
+  #landing .landing__item--active {
+    z-index: 1; }
 
 #landing .landing__item--horizontal img {
   transform: translateX(100%);

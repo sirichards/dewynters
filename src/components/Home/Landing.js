@@ -6,7 +6,7 @@ class Landing extends Component {
     constructor() {
         super()
         this.state = {
-            activeSlide: 0,
+            activeSlide: -1,
             images: [
                 {
                     image1: 'http://placehold.it/960x1080?text=Image+1',
@@ -28,13 +28,11 @@ class Landing extends Component {
         }
     }
     componentDidMount() {
-        setInterval( () => {
-
-            var index = this.state.activeSlide+1;
-            (index > this.state.images.length -1) ? index = 0 : index;
-            this.setState({activeSlide: index})
-            
-        }, 1500);
+        setInterval(() => {
+            var index = this.state.activeSlide + 1;
+            (index > this.state.images.length - 1) ? index = 0 : index;
+            this.setState({ activeSlide: index })
+        }, 4500);
     }
     render() {
 

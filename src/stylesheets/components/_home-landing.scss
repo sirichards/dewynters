@@ -1,8 +1,9 @@
 .landing {
     width: 100vw;
     height: 100vh;
-    flex: 0 0 auto;
+    overflow: hidden;
 }
+
 #landing {
 
     .landing__item {
@@ -24,6 +25,10 @@
         &--active, &--activeLast {
             opacity: 1;
             visibility: visible;
+            z-index: 0;
+        }
+        &--active {
+            z-index: 1;
         }
     }
 

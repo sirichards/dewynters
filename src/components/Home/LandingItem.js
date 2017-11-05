@@ -12,7 +12,7 @@ class LandingItem extends Component {
             classNames = classNames + " landing__item landing__item--active";
         }
 
-        if (this.props.index === this.props.activeSlide - 1 || (this.props.index == this.props.imageLength && this.props.activeSlide == 0)) {
+        if (this.props.index === this.props.activeSlide - 1 || (this.props.index == this.props.imageLength-1) && this.props.activeSlide == 0) {
             classNames = classNames + " landing__item--activeLast";
         }
 
