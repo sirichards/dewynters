@@ -3,3 +3,64 @@
     height: 100vh;
     flex: 0 0 auto;
 }
+#landing {
+
+    .landing__item {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        img {
+            position: relative;
+            transition-duration: 1s;
+            transition-delay: 1s;
+            max-width: 100%;
+            max-height: 100%;
+            display: inline-block;
+        }
+        &--active, &--activeLast {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .landing__item--horizontal {
+        img {
+            transform: translateX(100%);
+            height: 50%;
+            &:last-child {
+                transform: translateX(-100%);
+            }
+        }
+        &.landing__item--active, &.landing__item--activeLast {
+            img {
+                transform: translateX(0);
+                &:last-child {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+
+    .landing__item--vertical {
+        img {
+            transform: translateY(100%);
+            width: 50%;
+            &:last-child {
+                transform: translateY(-100%);
+            }
+        }
+        &.landing__item--active, &.landing__item--activeLast {
+            img {
+                transform: translateY(0);
+                &:last-child {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+

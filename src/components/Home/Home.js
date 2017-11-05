@@ -23,11 +23,9 @@ class Home extends Component {
         })
     }
     scrollHorizontal(e) {
-        const scrollEl = document.querySelector('.home-scroll');
-
         var direction = e.deltaY > 0 ? 'up' : 'down';
 
-        if (direction == 'up') {
+        if (direction === 'up') {
             this.refs.slide.next()
         } else {
             this.refs.slide.prev()
